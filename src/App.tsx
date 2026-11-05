@@ -582,7 +582,6 @@ function App() {
         {menuOpen && !recordMode ? <div className="quick-menu hide-in-record"><button type="button" onClick={() => { setDrawer('scenes'); setMenuOpen(false) }}><SunMoon size={15} /> Scenes</button><button type="button" onClick={() => { setDrawer('music'); setMenuOpen(false) }}><ListMusic size={15} /> Music Library</button><button type="button" onClick={() => { setDrawer('settings'); setMenuOpen(false) }}><Settings2 size={15} /> Visual Settings</button><button type="button" onClick={() => { void enterRecordMode(); setMenuOpen(false) }}><Film size={15} /> Enter Cinematic Mode</button></div> : null}
 
         {!recordMode ? <div className="record-launch hide-in-record"><button type="button" onClick={() => void enterRecordMode()}><Film size={14} /> Enter Cinematic Mode</button></div> : null}
-        {recordMode ? <button type="button" className="record-hotkey-hint" aria-label="Tekan H untuk menampilkan kontrol">H</button> : null}
       </div>
 
       <AnimatePresence>
